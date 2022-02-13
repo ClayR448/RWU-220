@@ -29,4 +29,4 @@ DELETE FROM orders where id in (1, 2);
 SELECT DISTINCT orders.product, orders.cost, customers.firstname, customers.lastname, customers.company
 FROM orders, customers
 INNER JOIN orders o on customers.id = o.customerId
-    WHERE o.customerId=1;
+    WHERE o.customerId=1

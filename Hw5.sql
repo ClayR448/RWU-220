@@ -25,4 +25,15 @@ create table orders
 create index customerId
     on orders (customerId);
 
+create table products
+(
+    id          int auto_increment
+        primary key,
+    product     int not null,
+    customer_id int not null,
+    store       int not null,
+    constraint id
+        unique (id)
+);
+
 
